@@ -1,8 +1,10 @@
 import React from "react";
+//Import Pages
+import AboutUs from "./pages/AboutUs";
 function App() {
   return (
     <div className="App">
-      <h1>Safari</h1>
+      <AboutUs />
     </div>
   );
 }
