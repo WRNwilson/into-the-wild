@@ -4,6 +4,7 @@ import { About, Description, Image, Hide } from "../styles";
 // Framer Motion
 import { motion } from "framer-motion";
 import { fade, titleAnim, photoAnim } from "../Animation";
+import Wave from "./Wave";
 
 const AboutSection = () => {
   return (
@@ -35,6 +36,7 @@ const AboutSection = () => {
           alt="photographer taking up close shot of a stag."
         />
       </Image>
+      <Wave />
     </About>
   );
 };
