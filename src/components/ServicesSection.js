@@ -8,6 +8,9 @@ import teamwork from "../img/teamwork.svg";
 // Styles
 import { About, Description, Image, Hide } from "../styles";
 import styled from "styled-components";
+// import { useInView } from "react-intersection-observer";
+// import { useAnimation } from "framer-motion";
+
 const ServicesSection = () => {
   return (
     <Services>
