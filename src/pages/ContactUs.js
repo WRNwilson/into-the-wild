@@ -33,7 +33,7 @@ const ContactUs = () => {
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>facebook</h2>
+            <h2>Facebook</h2>
           </Social>
         </Hide>
       </div>
