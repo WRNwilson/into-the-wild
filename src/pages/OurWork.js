@@ -5,10 +5,19 @@ import { Link } from "react-router-dom";
 import zebras from "../img/zebras.jpg";
 import motherchildElephant from "../img/motherchildElephant.jpg";
 import twogiraffes from "../img/twogiraffes.jpg";
+//Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../Animation";
 
 const OurWork = () => {
   return (
-    <Work>
+    <Work
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      style={{ background: "#fff" }}
+    >
       <Movie>
         <h2>Zebras</h2>
         <div className="line"></div>
@@ -34,13 +43,13 @@ const OurWork = () => {
   );
 };
 
-const Work = styled.div`
+const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
   h2 {
     padding: 1rem 0rem;
-    color: #ebebeb;
+    /* color: #ebebeb; */
   }
 `;
 
