@@ -7,7 +7,7 @@ import motherchildElephant from "../img/motherchildElephant.jpg";
 import twogiraffes from "../img/twogiraffes.jpg";
 //Animations
 import { motion } from "framer-motion";
-import { pageAnimation } from "../Animation";
+import { pageAnimation, fade, photoAnim, lineAnim } from "../Animation";
 
 const OurWork = () => {
   return (
@@ -19,22 +19,26 @@ const OurWork = () => {
       style={{ background: "#fff" }}
     >
       <Movie>
-        <h2>Zebras</h2>
-        <div className="line"></div>
+        <motion.h2 variants={fade}>Zebras</motion.h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/zebras">
-          <img src={zebras} alt="A dazzle of zebras" />
+          <motion.img
+            variants={photoAnim}
+            src={zebras}
+            alt="A dazzle of zebras"
+          />
         </Link>
       </Movie>
       <Movie>
         <h2>Mother And Child Elephant</h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/motherchildElephant">
           <img src={motherchildElephant} alt="Mother and Child Elephant" />
         </Link>
       </Movie>
       <Movie>
         <h2>Two Giraffes</h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/twogiraffes">
           <img src={twogiraffes} alt="Two Giraffes" />
         </Link>
@@ -57,7 +61,7 @@ const Movie = styled.div`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
-    background: #cccccc;
+    background: #23d997;
     margin-bottom: 3rem;
   }
   img {
