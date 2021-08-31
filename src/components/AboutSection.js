@@ -1,6 +1,7 @@
 import React from "react";
 import home1 from "../img/home1.jpg";
 import { About, Description, Image, Hide } from "../styles";
+import { Link } from "react-router-dom";
 // Framer Motion
 import { motion } from "framer-motion";
 import { fade, titleAnim, photoAnim } from "../Animation";
@@ -27,7 +28,9 @@ const AboutSection = () => {
           All nature photographers or videographer are welcome to contact us to
           schedule your safari into the wild!
         </motion.p>
-        <motion.button variants={fade}>Contact Us</motion.button>
+        <Link to="/contact">
+          <motion.button variants={fade}> Contact Us</motion.button>
+        </Link>
       </Description>
       <Image>
         <motion.img
