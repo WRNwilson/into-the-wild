@@ -7,6 +7,11 @@ export const About = styled.div`
   justify-content: space-between;
   padding: 5rem 10rem;
   color: white;
+  @media (max-width: 1300px) {
+    display: block;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
 `;
 
 export const Description = styled.div`
@@ -23,8 +28,11 @@ export const Image = styled.div`
   overflow: hidden;
   img {
     width: 100%;
-    height: 80vh;
-    object-fit: cover;
+    height: 100%;
+    max-height: 100%;
+    /* object-fit: cover; */
+    max-width: 100%;
+    /* width: auto; */
   }
 `;
 

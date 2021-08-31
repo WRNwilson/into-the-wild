@@ -8,6 +8,7 @@ import teamwork from "../img/teamwork.svg";
 // Styles
 import { About, Description, Image, Hide } from "../styles";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 // import { useInView } from "react-intersection-observer";
 // import { useAnimation } from "framer-motion";
 
@@ -50,7 +51,7 @@ const ServicesSection = () => {
         </Cards>
       </Description>
       <Image>
-        <img src={home2} alt="man in woods taking photograph" />
+        <motion.img src={home2} alt="man in woods taking photograph" />
       </Image>
     </Services>
   );
