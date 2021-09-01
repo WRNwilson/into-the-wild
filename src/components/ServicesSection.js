@@ -6,7 +6,7 @@ import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 // Styles
-import { About, Description, Image, Hide } from "../styles";
+import { About, Description, Image } from "../styles"; //{Hide}
 import styled from "styled-components";
 import { motion } from "framer-motion";
 // import { useInView } from "react-intersection-observer";

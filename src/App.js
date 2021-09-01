@@ -1,6 +1,6 @@
 import React from "react";
 import GlobalStyle from "./components/GlobalStyle";
-import ServicesSection from "./components/ServicesSection";
+// import ServicesSection from "./components/ServicesSection";
 import Nav from "./components/Nav";
 import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork";
