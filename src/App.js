@@ -12,7 +12,12 @@ import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 function App() {
   const location = useLocation();
-  console.log(location);
+  // adjust scrll behaviour
+  // window.onload = function () {
+  //   setTimeout(function () {
+  //     window.scrollTo(0, 0);
+  //   }, 1);
+  // };
   return (
     <div className="App">
       <GlobalStyle />

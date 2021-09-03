@@ -9,7 +9,7 @@ import waterBuffalo from "../img/waterBuffalo.jpg";
 export const MovieState = () => {
   return [
     {
-      title: "A Dazzle Of Zebras",
+      title: "Zebras",
       mainImg: zebras,
       secondaryImg: rideAlong,
       url: "/work/zebras",
@@ -32,7 +32,7 @@ export const MovieState = () => {
       ],
     },
     {
-      title: "Mother And Child Elephant",
+      title: "Elephants",
       mainImg: motherchildElephant,
       url: "/work/motherchildElephant",
       secondaryImg: elephants,
@@ -55,7 +55,7 @@ export const MovieState = () => {
       ],
     },
     {
-      title: "Two Giraffes",
+      title: "Giraffes",
       mainImg: twogiraffes,
       url: "/work/twogiraffes",
       secondaryImg: waterBuffalo,
